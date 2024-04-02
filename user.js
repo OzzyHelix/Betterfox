@@ -102,10 +102,11 @@ user_pref("dom.security.https_first", true);
 user_pref("dom.security.https_first_schemeless", true);
 
 /** PASSWORDS ***/
+user_pref("signon.rememberSignons", true);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.privateBrowsingCapture.enabled", false);
 user_pref("network.auth.subresource-http-auth-allow", 1);
-user_pref("editor.truncate_user_pastes", false);
+user_pref("editor.truncate_user_pastes", true);
 
 /** MIXED CONTENT + CROSS-SITE ***/
 user_pref("security.mixed_content.block_display_content", true);
@@ -172,6 +173,7 @@ user_pref("network.connectivity-service.enabled", false);
  * SECTION: PESKYFOX                                                        *
 ****************************************************************************/
 /** MOZILLA UI ***/
+user_pref("identity.fxaccounts.enabled", true);
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
@@ -227,6 +229,12 @@ user_pref("browser.bookmarks.openInTabClosesMenu", false);
 user_pref("browser.menu.showViewImageInfo", true);
 user_pref("findbar.highlightAll", true);
 user_pref("layout.word_select.eat_space_to_next_word", false);
+
+/** ADDRESS + CREDIT CARD MANAGER ***/
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.addresses.enabled", true);
+user_pref("extensions.formautofill.creditCards.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled", true);
 
 /****************************************************************************
  * START: MY OVERRIDES                                                      *
